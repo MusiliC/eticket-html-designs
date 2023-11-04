@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 90vh;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .mainContainer {
+      width: 83%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      gap: 30px;
+    }
+    .heroSection {
+      width: 50%;
+      display: flex;
+      flex-direction: column;      
+      gap: 20px;
+    }
+    .sectionTitle {
+      font-size: 2.7rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      line-height: 4rem;
+     
+    }
+    .summary {
+      width: 70%;
+      color: #272829;
+      margin: 13px 0px;
+  
+    }
+    .blueText {
+      color: rgb(0, 53, 133);
+    }
+    .normalButton{
+        padding: 12px 24px;
+        border-radius: 25px; 
+        border:none;
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        cursor: pointer;
+    }
+    .outlineButton{
+        border:1px rgb(0, 53, 133) solid;
+        padding: 10px 20px;
+        border-radius: 25px;  
+        color: rgb(0, 53, 133);      
+    }
+    .outlineButton:hover{
+        /* border:none; */
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        cursor: pointer;
+    }
+    .homeButtons{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .heroImage {
+      width: 50%;
+    }
+  </style>
+  <body>
+    <div class="mainContainer">
+      <div class="heroSection">
+        <div class="sectionTitle">
+          <p>
+            Experience The <br />
+            <span class="blueText">Thrill of Live Sports </span> <br />
+            Like Never Before
+          </p>
+        </div>
+        <div>
+          <p class="summary">
+            Experience the ultimate in live entertainment with our seamless
+            ticketing system. Get ready to secure your spot at the heart of the
+            action
+          </p>
+        </div>
+        <div class="homeButtons">
+            <div class="outlineButton">Get Ticket</div>
+            <div class="normalButton">Fixtures</div>
+        </div>
+      </div>
+      <div class="heroImage"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        font-size: 14px;
+    }
+    .mainContainer{
+        width: 83%;
+        margin: auto;
+       padding: 20px 0px;
+    }
+    .title{
+        font-size: 1.2rem;
+
+    }
+    .title a{
+        color:  rgb(0, 53, 133);
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .navClass{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .links{
+        display: flex;
+        gap: 40px;
+        
+    }
+    .links a{
+        color: #272829;
+        text-decoration: none;
+        
+    }
+    .links a:hover{
+        color:  rgb(0, 53, 133);
+        
+    }
+    .contactButton{
+        border:1px rgb(0, 53, 133) solid;
+        padding: 8px 17px;
+        border-radius: 25px;  
+        color: rgb(0, 53, 133);      
+    }
+    .contactButton:hover{
+        /* border:none; */
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="mainContainer" >
+        <nav class="navClass">
+            <div class="title">
+                <a href="/">Etciket</a>
+            </div>
+            <div class="links" >
+               <a href="">HOME</a>
+               <a href="">TICKETS</a>
+               <a href="">FIXTURES</a>
+            </div>
+            <div class="contactButton">
+                <p>LOGOUT</p>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
