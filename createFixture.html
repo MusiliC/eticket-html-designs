@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+    }
+    .mainContainer {
+      width: 83%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .formContainer {
+      width: 600px;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 15px;
+      margin: 20px 0px;
+    }
+    .fixtureTitle {
+      font-size: 1.5rem;
+    }
+
+    .normalButton {
+      padding: 12px 24px;
+      border-radius: 25px;
+      border: none;
+      background-color: rgb(10, 79, 182);
+      color: white;
+      cursor: pointer;
+    }
+    .formInput {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 5px 0px;
+    }
+    .formInput input {
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid lightgray;
+    }
+    .formInput input:focus {
+      outline: none;
+    }
+  </style>
+  <body>
+    <div class="mainContainer">
+      <div class="createFixtureContainer">
+        <p class="fixtureTitle">Create Fixture</p>
+
+        <form action="">
+          <div class="formContainer">
+            <div class="formInput">
+              <label for="time">Fixture Time:</label>
+              <input type="text" name="time" id="" />
+            </div>
+            <div class="formInput">
+              <label for="location">Location:</label>
+              <input type="text" name="location" id="" />
+            </div>
+            <div class="formInput">
+              <label for="homeTeam">Home Team:</label>
+              <input type="text" name="homeTeam" id="" />
+            </div>
+            <div class="formInput">
+              <label for="awayTeam">Away Team:</label>
+              <input type="text" name="awayTeam" id="" />
+            </div>
+            <div class="formInput">
+              <label for="date">Fixture Date:</label>
+              <input type="date" name="date" id="" />
+            </div>
+          </div>
+          <input class="normalButton" type="submit" value="Post Fixture" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

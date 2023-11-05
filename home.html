@@ -21,7 +21,8 @@
       margin: auto;
       padding-top: 10px;
       padding-bottom: 10px;
-      display: flex;
+      display: flex;      
+      justify-content: space-around;
       height: 100%;
       align-items: center;
       gap: 30px;
@@ -76,6 +77,13 @@
     .heroImage {
       width: 50%;
     }
+    .imageContainer{
+      width: 100%;
+  
+    }
+    .bgImage{
+      width: 100%;
+    }
   </style>
   <body>
     <div class="mainContainer">
@@ -95,11 +103,15 @@
           </p>
         </div>
         <div class="homeButtons">
-            <div class="outlineButton">Get Ticket</div>
-            <div class="normalButton">Fixtures</div>
+            <div class="outlineButton" >  My Tickets</div>
+            <div class="normalButton">Upcoming Fixtures</div>
         </div>
       </div>
-      <div class="heroImage"></div>
+      <div class="heroImage">
+        <div class="imageContainer">
+          <img class="bgImage" src="./assets/stad.jpg" alt="stadium">
+        </div>
+      </div>
     </div>
   </body>
 </html>
