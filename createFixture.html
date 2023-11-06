@@ -16,7 +16,7 @@
       font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 15px;
     }
-    .mainContainer {
+    .formMainContainer {
       width: 83%;
       margin: auto;
       padding-top: 10px;
@@ -33,7 +33,7 @@
       font-size: 1.5rem;
     }
 
-    .normalButton {
+    .normalFormButton {
       padding: 12px 24px;
       border-radius: 25px;
       border: none;
@@ -57,34 +57,34 @@
     }
   </style>
   <body>
-    <div class="mainContainer">
+    <div class="formMainContainer">
       <div class="createFixtureContainer">
         <p class="fixtureTitle">Create Fixture</p>
 
-        <form action="">
+        <form action="./fixtures" method="post">
           <div class="formContainer">
             <div class="formInput">
-              <label for="time">Fixture Time:</label>
-              <input type="text" name="time" id="" />
+              <label for="fixtureTime">Fixture Time:</label>
+              <input type="text" name="fixtureTime" id="fixtureTime" />
             </div>
             <div class="formInput">
-              <label for="location">Location:</label>
-              <input type="text" name="location" id="" />
+              <label for="fixtureLocation">Location:</label>
+              <input type="text" name="fixtureLocation" id="fixtureLocation" />
             </div>
             <div class="formInput">
               <label for="homeTeam">Home Team:</label>
-              <input type="text" name="homeTeam" id="" />
+              <input type="text" name="homeTeam" id="homeTeam" />
             </div>
             <div class="formInput">
               <label for="awayTeam">Away Team:</label>
-              <input type="text" name="awayTeam" id="" />
+              <input type="text" name="awayTeam" id="awayTeam" />
             </div>
             <div class="formInput">
-              <label for="date">Fixture Date:</label>
-              <input type="date" name="date" id="" />
+              <label for="fixtureDate">Fixture Date:</label>
+              <input type="date" name="fixtureDate" id="fixtureDate" />
             </div>
           </div>
-          <input class="normalButton" type="submit" value="Post Fixture" />
+          <input class="normalFormButton" type="submit" value="Post Fixture" />
         </form>
       </div>
     </div>

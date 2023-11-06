@@ -49,21 +49,23 @@
     .blueText {
       color: rgb(0, 53, 133);
     }
-    .normalButton{
+    .homeNormalButton{
         padding: 12px 24px;
         border-radius: 25px; 
         border:none;
         background-color: rgb(10, 79, 182) ;
         color: white;
         cursor: pointer;
+        text-decoration: none;
     }
-    .outlineButton{
+    .homeOutlineButton{
         border:1px rgb(0, 53, 133) solid;
         padding: 10px 20px;
         border-radius: 25px;  
-        color: rgb(0, 53, 133);      
+        color: rgb(0, 53, 133);  
+        text-decoration: none;    
     }
-    .outlineButton:hover{
+    .homeOutlineButton:hover{
         /* border:none; */
         background-color: rgb(10, 79, 182) ;
         color: white;
@@ -103,8 +105,8 @@
           </p>
         </div>
         <div class="homeButtons">
-            <div class="outlineButton" >  My Tickets</div>
-            <div class="normalButton">Upcoming Fixtures</div>
+            <a href="./tickets" class="homeOutlineButton" >  My Tickets</a>
+            <a href="./fixtures" class="homeNormalButton">Upcoming Fixtures</a>
         </div>
       </div>
       <div class="heroImage">

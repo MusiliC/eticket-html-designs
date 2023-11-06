@@ -1,83 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-      * {
+  </head>
+  <style>
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    body{
-        width: 100%;
-        font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 14px;
+    body {
+      width: 100%;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
     }
-    .mainContainer{
-        width: 83%;
-        margin: auto;
-       padding: 20px 0px;
+    .navbarContainer {
+      width: 83%;
+      margin: auto;
+      padding: 20px 0px;
     }
-    .title{
-        font-size: 1.2rem;
-
+    .title {
+      font-size: 1.2rem;
     }
-    .title a{
-        color:  rgb(0, 53, 133);
-        text-decoration: none;
-        font-weight: 600;
+    .title a {
+      color: rgb(0, 53, 133);
+      text-decoration: none;
+      font-weight: 600;
     }
-    .navClass{
+    .navClass {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+    .links {
+      display: flex;
+      gap: 40px;
+    }
+    .links,
+    a {
+      color: #272829;
+      text-decoration: none;
+    }
+    .links a:hover {
+      color: rgb(0, 53, 133);
+    }
+    .contactButton {
+      border: 1px rgb(0, 53, 133) solid;
+      padding: 8px 17px;
+      border-radius: 25px;
+      color: rgb(0, 53, 133);
+    }
+    .contactButton a {
+      text-decoration: none;
+      color: rgb(0, 53, 133);
+    }
+    .contactButton a:hover {
+      color: white;
+    }
+    .contactButton:hover {
+      /* border:none; */
+      background-color: rgb(10, 79, 182);
+      color: white;
+      cursor: pointer;
+    }
+    .lastPart{
         display: flex;
-        justify-content: space-between;
-        width: 100%;
         align-items: center;
+        gap: 30px;
     }
-    .links{
-        display: flex;
-        gap: 40px;
-        
-    }
-    .links a{
-        color: #272829;
-        text-decoration: none;
-        
-    }
-    .links a:hover{
-        color:  rgb(0, 53, 133);
-        
-    }
-    .contactButton{
-        border:1px rgb(0, 53, 133) solid;
-        padding: 8px 17px;
-        border-radius: 25px;  
-        color: rgb(0, 53, 133);      
-    }
-    .contactButton:hover{
-        /* border:none; */
+    .profile{
+        padding: 12px 15px;
+        border-radius: 50%; 
+        border:none;
         background-color: rgb(10, 79, 182) ;
         color: white;
-        cursor: pointer;
+        font-weight: 600;
     }
-</style>
-<body>
-    <div class="mainContainer" >
-        <nav class="navClass">
-            <div class="title">
-                <a href="/">Etciket</a>
-            </div>
-            <div class="links" >
-               <a href="">HOME</a>
-               <a href="">TICKETS</a>
-               <a href="">FIXTURES</a>
-            </div>
-            <div class="contactButton">
-                <p>LOGOUT</p>
-            </div>
-        </nav>
+  </style>
+  <body>
+    <div class="navbarContainer">
+      <nav class="navClass">
+        <div class="title">
+          <a href="/">Etciket</a>
+        </div>
+        <div class="links">
+          <a href="./home">HOME</a>
+          <a href="./tickets">TICKETS</a>
+          <a href="./fixtures">FIXTURES</a>
+        </div>
+        <div class="lastPart">
+          <p class="profile" >A</p>
+          <a href="./logout" class="contactButton"> LOGOUT </a>
+        </div>
+      </nav>
     </div>
-</body>
+  </body>
 </html>
