@@ -38,7 +38,7 @@
       align-items: center;
     }
     .topPartTitle{
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
     .topPartTitle p{
@@ -48,16 +48,17 @@
         font-style: italic;
     }
     .fixtureContainer {
-      width: 70%;
+      width: 80%;
       margin: auto;
     }
     .oneFixture {
       display: flex;
       justify-content: space-between;
+      width: 100%;
       align-items: center;
       padding: 18px 0px;
       color: #272829;
-      border-bottom: 1px solid #7c7c7c;
+      border-bottom: 1px solid #7c7c7c;      
     }
     .oneFixture:hover {
       cursor: pointer;
@@ -65,11 +66,12 @@
       padding: 18px 5px;
       color: black;
     }
-    .teams {
+    .teams, .timeLocation {
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 7px;      
     }
+   
   </style>
   <body>
     <div class="mainContainer">
@@ -83,7 +85,10 @@
       <div class="fixtureContainer">
         <!-- each fixture div -->
         <div class="oneFixture">
-          <div class="teams">
+          <div class="fixture">
+            <p>Kenya Premier League</p>
+          </div>
+          <div class="timeLocation">
             <p>15:00 EAT</p>
             <p>MISC Kasarani</p>
           </div>
@@ -101,6 +106,9 @@
 
         <!-- fixture2 -->
         <div class="oneFixture">
+          <div>
+            <p>Caf Champions League</p>
+          </div>
           <div class="teams">
             <p>15:00 EAT</p>
             <p>Nyayo Stadium</p>
@@ -113,7 +121,26 @@
             <p>12/03/2023</p>
           </div>
           <div class="ticket">
-            <div class="outlineButton">Buy Ticket</div>
+            <div class="outlineTicketButton">Buy Ticket</div>
+          </div>
+        </div>
+        <div class="oneFixture">
+          <div>
+            <p>Mozzart Cup</p>
+          </div>
+          <div class="teams">
+            <p>15:00 EAT</p>
+            <p>Nyayo Stadium</p>
+          </div>
+          <div class="teams">
+            <p>K sharks</p>
+            <p>Afc Leopards</p>
+          </div>
+          <div class="date">
+            <p>12/03/2023</p>
+          </div>
+          <div class="ticket">
+            <div class="outlineTicketButton">Buy Ticket</div>
           </div>
         </div>
       </div>
