@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 90vh;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .mainTicketContainer{
+        width: 500px;
+        padding: 20px;
+        border-radius: 5px;       
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    }
+    .topTicketPart{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .gameStyling{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+    .fixtureType{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .fineTicketDetails{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        margin-top: 10px;     
+    }
+    .fineTicketDetails .leftPart,.rightPart{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;        
+        text-align: start;      
+    }
+  </style>
+  <body>
+    <div class="mainTicketContainer">
+      <div class="topTicketPart">
+        <div class="imagePart">
+          <img src="https://footballkenya.org/wp-content/uploads/2019/09/FKF-Website-Header-Logo-300x120.png" alt="Logo">
+        </div>
+    
+      </div>
+      <div class="bottomTicketPart">
+        <div class="gameStyling">
+        <div class="fixtureType">
+          <p class="kpl">Kenya Premier League</p>      
+          <p class="game">Gor Mahia vs Afc Leopards</p>
+        </div>
+    </div>
+        <div class="fineTicketDetails">
+          <div class="leftPart">
+            <div class="ticketType">
+              <p> Type: VIP</p>
+            </div>
+
+            <div class="amount">
+              <p>Amount: 500</p>
+            </div>
+          </div>
+          <div class="rightPart">
+            <div class="ticketNumber">
+              <p>Ticket Number: 1001</p>
+            </div>
+            <div class="kickOff">
+              <p>Kick Off: 1300 hrs</p>
+            </div>
+            <div class="location">
+              <p>Location: Kasarani</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

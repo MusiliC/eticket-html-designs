@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+    }
+    .formMainContainer {
+      width: 83%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .formContainer {
+      width: 600px;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 15px;
+      margin: 20px 0px;
+    }
+    .fixtureTitle {
+      font-size: 1.5rem;
+    }
+
+    .normalFormButton {
+      padding: 12px 24px;
+      border-radius: 25px;
+      border: none;
+      background-color: rgb(10, 79, 182);
+      color: white;
+      cursor: pointer;
+    }
+    .formInput {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 5px 0px;
+    }
+    .formInput input {
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid lightgray;
+    }
+    .formInput input:focus {
+      outline: none;
+    }
+    .fixtureStyling{
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid lightgray;
+    }
+    .fixtureStyling:focus{
+      outline: none;
+    }
+  </style>
+<body>
+    <div class="mainTicketContainer">
+        <p class="fixtureTitle">Book a ticket</p>
+
+        <form action="#" method="post">
+          <div class="formContainer">
+            <div class="formInput">
+              <label for="clientName">Name:</label>
+              <input type="text" name="clientName" id="clientName" />
+            </div>
+            <div class="formInput">
+              <label for="clientEmail">Email:</label>
+              <input type="text" name="clientEmail" id="clientEmail" />
+            </div>
+            <div class="formInput">
+              <label for="number">Phone Number:</label>
+              <input type="text" name="number" id="number" />
+            </div>
+            <div class="formInput">
+                <label for="ticketType">Ticket Type:</label>
+                <select name="ticketType" id="ticketType" class="fixtureStyling">
+                  <option value="" selected disabled hidden>Choose ticket type</option>
+                  <option value="normal">Normal</option>
+                  <option value="VIP">VIP</option>               
+                </select>
+              </div>
+            <div class="formInput">
+              <label for="fixtureQuantity">Number of tickets:</label>
+              <input type="number" value="1" name="fixtureQuantity" id="fixtureQuantity" />
+            </div>
+          </div>
+          <input class="normalFormButton" type="submit" value="Book Ticket" />
+        </form>
+    </div>
+</body>
+</html>

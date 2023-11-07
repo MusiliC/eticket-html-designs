@@ -55,6 +55,14 @@
     .formInput input:focus {
       outline: none;
     }
+    .fixtureStyling{
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid lightgray;
+    }
+    .fixtureStyling:focus{
+      outline: none;
+    }
   </style>
   <body>
     <div class="formMainContainer">
@@ -65,7 +73,7 @@
           <div class="formContainer">
             <div class="formInput">
               <label for="fixtureTime">Fixture Time:</label>
-              <input type="text" name="fixtureTime" id="fixtureTime" />
+              <input type="time" name="fixtureTime" id="fixtureTime" />
             </div>
             <div class="formInput">
               <label for="fixtureLocation">Location:</label>
@@ -82,6 +90,16 @@
             <div class="formInput">
               <label for="fixtureDate">Fixture Date:</label>
               <input type="date" name="fixtureDate" id="fixtureDate" />
+            </div>
+            <div class="formInput">
+              <label for="fixtureType">Fixture Type:</label>
+              <select name="fixtureType" id="fixtureType" class="fixtureStyling">
+                <option value="" selected disabled hidden>Choose fixture type</option>
+                <option value="Kenya Premier League">Kenya Premier League</option>
+                <option value="Mozzart Cup">Mozzart Cup</option>
+                <option value="CAF Champions League">CAF Champions League</option>
+                <option value="CAF confederation">CAF confederation</option>
+              </select>
             </div>
           </div>
           <input class="normalFormButton" type="submit" value="Post Fixture" />
