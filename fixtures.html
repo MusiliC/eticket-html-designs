@@ -17,11 +17,25 @@
       font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 15px;
     }
+    .fixtureContainer {
+      width: 83%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
     .outlineTicketButton{
         border:1px rgb(0, 53, 133) solid;
         padding: 10px 20px;
         border-radius: 25px;  
         color: rgb(0, 53, 133);      
+    }
+    .outlineTicketButton a{
+      text-decoration: none;
+      color: rgb(0, 53, 133);
+    }
+    .outlineTicketButton a:hover{
+      text-decoration: none;
+      color: white;
     }
     .outlineTicketButton:hover{
         /* border:none; */
@@ -31,28 +45,25 @@
     }
   
     .topPart {
-      height: 170px;
+      height: 150px;
       background: rgb(28, 85, 172);
       margin-bottom: 30px;
       display: flex;
       align-items: center;
     }
     .topPartTitle{
-        width: 80%;
+        width: 83%;
         margin: auto;
     }
     .topPartTitle p{
         color: white;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: 600;
         font-style: italic;
     }
-    .fixtureContainer {
-      width: 80%;
-      margin: auto;
-    }
+   
     .oneFixture {
-      display: flex;
+      display: flex;    
       justify-content: space-between;
       width: 100%;
       align-items: center;
@@ -71,10 +82,18 @@
       flex-direction: column;
       gap: 7px;      
     }
+    .fixture{
+     width: 200px;     
+    }
+     .timeLocation, .teams{     
+      width: 150px;
+     }
+     
+   
    
   </style>
   <body>
-    <div class="mainContainer">
+    <div class="mainFixtureContainer">
       <!-- top part -->
       <div class="topPart">
         <div class="topPartTitle">
@@ -100,16 +119,16 @@
             <p>12/03/2023</p>
           </div>
           <div class="ticket">
-            <div class="outlineTicketButton">Buy Ticket</div>
+            <div class="outlineTicketButton"><a href="./book">Buy Ticket</a> </div>
           </div>
         </div>
 
         <!-- fixture2 -->
         <div class="oneFixture">
           <div>
-            <p>Caf Champions League</p>
+            <p class="fixture">Caf Champions League</p>
           </div>
-          <div class="teams">
+          <div class="timeLocation">
             <p>15:00 EAT</p>
             <p>Nyayo Stadium</p>
           </div>
@@ -125,10 +144,10 @@
           </div>
         </div>
         <div class="oneFixture">
-          <div>
+          <div class="fixture">
             <p>Mozzart Cup</p>
           </div>
-          <div class="teams">
+          <div class="timeLocation">
             <p>15:00 EAT</p>
             <p>Nyayo Stadium</p>
           </div>

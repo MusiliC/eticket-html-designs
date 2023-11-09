@@ -16,81 +16,131 @@
       height: 90vh;
       font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-    .mainTicketContainer{
-        width: 500px;
-        padding: 20px;
-        border-radius: 5px;       
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+    .ticketBodyContainer {
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    .topTicketPart{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+
+    .mainOneTicketContainer {
+      width: 700px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     }
-    .gameStyling{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        font-size: 1.1rem;
+    .topOneTicketPart {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
     }
-    .fixtureType{
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        text-align: center;
-        font-weight: 600;
+    .gameStyling {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      font-size: 1.1rem;
     }
-    .fineTicketDetails{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;  
-        margin-top: 10px;     
+    .fixtureType {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+      font-weight: 600;
     }
-    .fineTicketDetails .leftPart,.rightPart{
-        display: flex;
-        flex-direction: column;
-        gap: 7px;        
-        text-align: start;      
+    .fineTicketDetails {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .fineTicketDetails .leftPart,
+    .rightPart {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: start;
+    }
+    .ticketNormalButton {
+      padding: 12px 24px;
+      border-radius: 25px;
+      border: none;
+      background-color: rgb(10, 79, 182);
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .ticketOutlineButton {
+      border: 1px rgb(0, 53, 133) solid;
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: rgb(0, 53, 133);
+      text-decoration: none;
+    }
+    .ticketOutlineButton:hover {
+      /* border:none; */
+      background-color: rgb(10, 79, 182);
+      color: white;
+      cursor: pointer;
+    }
+    .ticketButtons {
+      display: flex;
+      margin-top: 30px;
+      gap: 20px;
+      align-items: center;
     }
   </style>
   <body>
-    <div class="mainTicketContainer">
-      <div class="topTicketPart">
-        <div class="imagePart">
-          <img src="https://footballkenya.org/wp-content/uploads/2019/09/FKF-Website-Header-Logo-300x120.png" alt="Logo">
-        </div>
-    
-      </div>
-      <div class="bottomTicketPart">
-        <div class="gameStyling">
-        <div class="fixtureType">
-          <p class="kpl">Kenya Premier League</p>      
-          <p class="game">Gor Mahia vs Afc Leopards</p>
-        </div>
-    </div>
-        <div class="fineTicketDetails">
-          <div class="leftPart">
-            <div class="ticketType">
-              <p> Type: VIP</p>
+    <div class="ticketBodyContainer">
+      <div class="mainOneTicketContainer">
+        <div class="oneTicketTop">
+          <div class="topOneTicketPart">
+            <div class="imagePart">
+              <img
+                src="https://footballkenya.org/wp-content/uploads/2019/09/FKF-Website-Header-Logo-300x120.png"
+                alt="Logo"
+              />
             </div>
+          </div>
+          <div class="bottomTicketPart">
+            <div class="gameStyling">
+              <div class="fixtureType">
+                <p class="kpl">Kenya Premier League</p>
+                <p class="game">Gor Mahia vs Afc Leopards</p>
+                <p class="date">3/11/2023</p>
+              </div>
+            </div>
+            <div class="fineTicketDetails">
+              <div class="leftPart">
+                <div class="ticketType">
+                  <p>Type: VIP</p>
+                </div>
 
-            <div class="amount">
-              <p>Amount: 500</p>
-            </div>
-          </div>
-          <div class="rightPart">
-            <div class="ticketNumber">
-              <p>Ticket Number: 1001</p>
-            </div>
-            <div class="kickOff">
-              <p>Kick Off: 1300 hrs</p>
-            </div>
-            <div class="location">
-              <p>Location: Kasarani</p>
+                <div class="amount">
+                  <p>Amount: 500</p>
+                </div>
+              </div>
+              <div class="rightPart">
+                <div class="ticketNumber">
+                  <p>Ticket Number: 1001</p>
+                </div>
+                <div class="kickOff">
+                  <p>Kick Off: 1300 hrs</p>
+                </div>
+                <div class="location">
+                  <p>Location: Kasarani</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="ticketButtons">
+        <a href="./fixtures" class="ticketNormalButton">Back</a>
+        <a href="#" class="ticketOutlineButton">Download</a>
       </div>
     </div>
   </body>

@@ -16,13 +16,14 @@
       font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 15px;
     }
-    .formMainContainer {
-      width: 83%;
-      margin: auto;
-      padding-top: 10px;
-      padding-bottom: 10px;
+    .mainTicketBookContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
     }
-    .formContainer {
+   
+    .formTicketContainer {
       width: 600px;
       display: grid;
       grid-template-columns: auto auto;
@@ -31,6 +32,7 @@
     }
     .fixtureTitle {
       font-size: 1.5rem;
+      text-align: center;
     }
 
     .normalFormButton {
@@ -63,13 +65,32 @@
     .fixtureStyling:focus{
       outline: none;
     }
+    .homeOutlineButton{
+        border:1px rgb(0, 53, 133) solid;
+        padding: 10px 20px;
+        border-radius: 25px;  
+        color: rgb(0, 53, 133);  
+        text-decoration: none;    
+    }
+    .homeOutlineButton:hover{
+        /* border:none; */
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        cursor: pointer;
+    }
+    .ticketButtons{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
   </style>
 <body>
-    <div class="mainTicketContainer">
-        <p class="fixtureTitle">Book a ticket</p>
+    <div class="mainTicketBookContainer">      
 
         <form action="#" method="post">
-          <div class="formContainer">
+          <p class="fixtureTitle">Book a ticket</p>
+          <div class="formTicketContainer">
             <div class="formInput">
               <label for="clientName">Name:</label>
               <input type="text" name="clientName" id="clientName" />
@@ -95,7 +116,11 @@
               <input type="number" value="1" name="fixtureQuantity" id="fixtureQuantity" />
             </div>
           </div>
-          <input class="normalFormButton" type="submit" value="Book Ticket" />
+          <div class="ticketButtons">
+            <a href="./" class="homeOutlineButton" > Cancel</a>
+            <input class="normalFormButton" type="submit" value="Book Ticket" />
+          </div>
+       
         </form>
     </div>
 </body>
