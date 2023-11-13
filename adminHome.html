@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+    }
+    .adminMainContainer{
+        display: flex;
+        width: 100%;       
+        min-height: 100vh;
+    }
+    .sidebar{
+        width: 20%;       
+        background-color: rgb(10, 79, 182);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .adminContent{
+      height: 100%;
+        width: 80%;
+    }
+    .adminAppName{
+        padding: 40px 30px;
+        border-bottom: 1px solid wheat;        
+        display: flex;
+        align-items: center;
+        gap: 10px;        
+    }
+
+    .adminAppName p{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .adminTitle{
+        padding: 30px 30px;
+        border-bottom: 1px solid wheat;       
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+        
+    }
+    .adminTitle p {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .adminLinks{       
+        display: flex;
+        flex-direction: column;
+        gap: 30px;        
+        padding: 40px 30px;
+        border-bottom: 1px solid wheat;    
+    }
+
+    .adminLinkTag{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .adminLinkTag a{
+        color: white;
+        text-decoration: none;
+    }
+   
+    .adminSettings{
+        padding: 40px 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .topAdminPart{
+        display: flex;
+        width: 80%;
+        margin: 10px auto;
+        padding: 20px 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .profile{
+        padding: 12px 15px;
+        border-radius: 50%; 
+        border:none;
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        font-weight: 600;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .links,
+    a {
+      color: #272829;
+      text-decoration: none;
+    }
+    .links a:hover {
+      color: rgb(0, 53, 133);
+    }
+
+    .contactButton {
+      border: 1px rgb(0, 53, 133) solid;
+      padding: 8px 17px;
+      border-radius: 25px;
+      color: rgb(0, 53, 133);
+    }
+    .contactButton a {
+      text-decoration: none;
+      color: rgb(0, 53, 133);
+    }
+    .contactButton a:hover {
+      color: white;
+    }
+    .contactButton:hover {
+      /* border:none; */
+      background-color: rgb(10, 79, 182);
+      color: white;
+      cursor: pointer;
+    }
+</style>
+<body>
+    <section class="adminContainer">
+    
+    <div class="adminMainContainer">
+        <div class="sidebar">
+            <div class="adminAppName">
+                <div>
+                    <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/football2--v1.png" alt="football2--v1" style="filter: invert(100%);"/>
+                </div>
+                <p>Eticket</p>
+            </div>
+            <div class="adminTitle">
+                <img width="23" height="23" src="https://img.icons8.com/ios/50/performance-macbook.png" alt="performance-macbook" style="filter: invert(100%);"/>
+                <p>Dashboard</p>
+            </div>
+            <div class="adminLinks">
+                <div class="adminLinkTag">
+                    <img width="22" height="22" src="https://img.icons8.com/ios/50/000000/edit--v1.png" alt="edit--v1" style="filter: invert(100%);"/>
+                    <div>
+                    <a href="#">Create Fixture</a>
+                </div>
+                </div>
+                <div class="adminLinkTag">
+                    <img width="22" height="22" src="https://img.icons8.com/ios/50/graph-report.png" alt="graph-report" style="filter: invert(100%);"/>
+                    <div>
+                        <a href="#">Ticket Report</a>
+                    </div>
+                </div>
+                <div class="adminLinkTag">
+                    <img width="22" height="22" src="https://img.icons8.com/ios-glyphs/30/group.png" alt="group" style="filter: invert(100%);"/>
+                    <div>
+                        <a href="#">Users</a>
+                    </div>
+                </div>
+               
+              
+            </div>
+            <div class="adminSettings">
+                <div>
+                 <img width="23" height="23" src="https://img.icons8.com/ios/50/000000/settings--v1.png" alt="settings--v1"  style="filter: invert(100%);"/>
+                </div>
+                <p>Settings</p>
+            </div>
+        </div>
+        <div class="adminContent">
+            <div class="topAdminPart">
+                       <div>
+
+                           <a href="./fixtures">FIXTURES</a>
+                       </div> 
+                       <div>
+
+                           <p class="profile" >A</p>
+                       </div>   
+                       <div>
+
+                           <a href="./logout" class="contactButton"> LOGOUT </a>
+                       </div> 
+                 
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
