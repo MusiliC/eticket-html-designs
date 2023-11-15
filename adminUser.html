@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+      }
+      .adminTableContainer {
+        width: 50%;
+        margin: 20px auto;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th {
+        color: rgb(10, 79, 182);
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 12px;
+      }
+      .fixtureTitleTable {
+        font-size: 1.5rem;
+        color: rgb(10, 79, 182);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      .ticketNormalButton {
+        padding: 12px 24px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgb(10, 79, 182);
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .ticketButtons {
+        display: flex;
+        margin-top: 30px;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+      .homeOutlineButton {
+        border: 1px rgb(0, 53, 133) solid;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        border-radius: 25px;
+        color: rgb(0, 53, 133);
+        text-decoration: none;
+      }
+      .homeOutlineButton:hover {
+        /* border:none; */
+        background-color: rgb(10, 79, 182);
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="adminTableContainer">
+      <p class="fixtureTitleTable">Users Report</p>
+
+      <table>
+        <tr>
+          <th>Username</th>
+          <th>VIP tickets</th>
+          <th>Normal tickets</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>0</td>
+          <td>1</td>
+          <td>
+            <div class="homeOutlineButton">Details</div>
+          </td>
+        </tr>
+        <tr>
+          <td>Mahrez</td>
+          <td>1</td>
+          <td>1</td>
+          <td>
+            <div class="homeOutlineButton">Details</div>
+          </td>
+        </tr>
+        <tr>
+          <td>Musili</td>
+          <td>2</td>
+          <td>0</td>
+          <td>
+            <div class="homeOutlineButton">Details</div>
+          </td>
+        </tr>
+      </table>
+      <div class="ticketButtons">
+        <a href="#" class="ticketNormalButton">Download</a>
+      </div>
+    </div>
+  </body>
+</html>

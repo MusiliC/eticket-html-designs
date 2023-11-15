@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+    }
+    .formMainContainer {
+      width: 83%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .formContainer {
+      width: 600px;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 15px;
+      margin: 20px 0px;
+    }
+    .fixtureTitle {
+      font-size: 1.5rem;
+      color: rgb(10, 79, 182);
+    }
+
+    .normalFormButton {
+      padding: 12px 24px;
+      border-radius: 25px;
+      border: none;
+      background-color: rgb(10, 79, 182);
+      color: white;
+      cursor: pointer;
+    }
+    .formInput {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 5px 0px;
+    }
+    .formInput input {
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid lightgray;
+    }
+    .formInput input:focus {
+      outline: none;
+    }
+    .fixtureStyling{
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid lightgray;
+    }
+    .fixtureStyling:focus{
+      outline: none;
+    }
+  </style>
+  <body>
+    <div class="formMainContainer">
+      <div class="createFixtureContainer">
+        <p class="fixtureTitle">Manage ticket for upcoming fixture:</p>
+
+        <form action="./fixtures" method="post">
+          <div class="formContainer">
+            <div class="formInput">
+                <label for="fixtureType">Fixture Type:</label>
+                <select name="fixtureType" id="fixtureType" class="fixtureStyling">
+                  <option value="" selected disabled hidden>Choose fixture type</option>
+                  <option value="Kenya Premier League">Kenya Premier League</option>
+                  <option value="Mozzart Cup">Mozzart Cup</option>
+                  <option value="CAF Champions League">CAF Champions League</option>
+                  <option value="CAF confederation">CAF confederation</option>
+                </select>
+              </div>
+            <div class="formInput">
+              <label for="totalTickets">Total Tickets Allocated:</label>
+              <input type="number" name="totalTickets" id="totalTickets" />
+            </div>
+            
+            <div class="formInput">
+              <label for="vipTickets">Total VIP tickets:</label>
+              <input type="number" name="vipTickets" id="vipTickets" />
+            </div>
+            <div class="formInput">
+              <label for="vipAmount">VIP ticket amount:</label>
+              <input type="number" name="vipAmount" id="vipAmount" />
+            </div>
+            <div class="formInput">
+              <label for="normalTickets">Total Normal tickets:</label>
+              <input type="number" name="normalTickets" id="normalTickets" />
+            </div>
+            <div class="formInput">
+              <label for="normalAmount">Normal ticket amount:</label>
+              <input type="number" name="normalAmount" id="normalAmount" />
+            </div>
+          
+          </div>
+          <input class="normalFormButton" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

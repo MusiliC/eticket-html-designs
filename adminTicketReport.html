@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+      }
+      .adminTableContainer {
+        width: 50%;
+        margin: 20px auto;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th{
+        color: rgb(10, 79, 182);
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;        
+        padding: 12px;
+      }
+      .fixtureTitleTable {
+      font-size: 1.5rem;
+      color: rgb(10, 79, 182);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      .ticketNormalButton {
+      padding: 12px 24px;
+      border-radius: 25px;
+      border: none;
+      background-color: rgb(10, 79, 182);
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .ticketButtons {
+      display: flex;
+      margin-top: 30px;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="adminTableContainer">
+
+  <p class="fixtureTitleTable">Ticket Report</p>
+
+      <table>
+        <tr>
+          <th>Field</th>
+          <th>Data</th>
+        </tr>
+        <tr>
+          <td>Fixture</td>
+          <td>Gor vs AFC - 11/11/2023</td>
+        </tr>
+        <tr>
+          <td>Fixture Type</td>
+          <td>Kenya Premier League</td>
+        </tr>
+        <tr>
+          <td>Total Allocated Tickets</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>Total Sold</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Not Sold</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Normal Tickets sold</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Normal generated outcome</td>
+          <td>10,000</td>
+        </tr>
+        <tr>
+          <td>VIP Tickets sold</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>vip generated outcome</td>
+          <td>7,000</td>
+        </tr>
+        <tr>
+          <td>Total generated outcome</td>
+          <td>70,000</td>
+        </tr>
+      </table>
+      <div class="ticketButtons"> 
+        <a href="#" class="ticketNormalButton">Download</a>
+      </div>
+    </div>
+  </body>
+</html>
