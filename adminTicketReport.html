@@ -13,56 +13,54 @@
         font-size: 15px;
       }
       .adminTableContainer {
-        width: 50%;
+        width: 60%;
         margin: 20px auto;
       }
       table {
         border-collapse: collapse;
         width: 100%;
       }
-      th{
+      th {
         color: rgb(10, 79, 182);
       }
 
       td,
       th {
         border: 1px solid #dddddd;
-        text-align: left;        
+        text-align: left;
         padding: 12px;
       }
       .fixtureTitleTable {
-      font-size: 1.5rem;
-      color: rgb(10, 79, 182);
-      margin-bottom: 20px;
-      text-align: center;
-    }
+        font-size: 1.5rem;
+        color: rgb(10, 79, 182);
+        margin-bottom: 20px;
+        text-align: center;
+      }
 
       tr:nth-child(even) {
         background-color: #dddddd;
       }
-      .ticketNormalButton {
-      padding: 12px 24px;
-      border-radius: 25px;
-      border: none;
-      background-color: rgb(10, 79, 182);
-      color: white;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .ticketButtons {
-      display: flex;
-      margin-top: 30px;
-      gap: 20px;
-      align-items: center;
-      justify-content: center;
-    }
+      .ticketReportOneButton {
+        padding: 12px 24px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgb(10, 79, 182);
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .ticketReportButton {
+        display: flex;
+        margin-top: 30px;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
     <div class="adminTableContainer">
-
-  <p class="fixtureTitleTable">Ticket Report</p>
-
+      <p class="fixtureTitleTable">Ticket Report</p>
       <table>
         <tr>
           <th>Field</th>
@@ -109,8 +107,8 @@
           <td>70,000</td>
         </tr>
       </table>
-      <div class="ticketButtons"> 
-        <a href="#" class="ticketNormalButton">Download</a>
+      <div class="ticketReportButton">
+        <a href="#" class="ticketReportOneButton">Download</a>
       </div>
     </div>
   </body>

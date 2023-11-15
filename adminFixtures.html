@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 90vh;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+    }
+    .fixtureContainer {
+      width: 83%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .outlineTicketButton{
+        border:1px rgb(0, 53, 133) solid;
+        padding: 10px 20px;
+        border-radius: 25px;  
+        color: rgb(0, 53, 133);      
+    }
+    .outlineTicketButton a{
+      text-decoration: none;
+      color: rgb(0, 53, 133);
+    }
+    .outlineTicketButton a:hover{
+      text-decoration: none;
+      color: white;
+    }
+    .outlineTicketButton:hover{
+        /* border:none; */
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        cursor: pointer;
+    }
+  
+    .topPart {
+      height: 150px;
+      background: rgb(28, 85, 172);
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+    }
+    .topPartTitle{
+        width: 83%;
+        margin: auto;
+    }
+    .topPartTitle p{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-style: italic;
+    }
+   
+    .oneFixture {
+      display: flex;    
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      padding: 18px 0px;
+      color: #272829;
+      border-bottom: 1px solid #7c7c7c;      
+    }
+    .oneFixture:hover {
+      cursor: pointer;
+      background-color: rgb(238, 238, 238);
+      padding: 18px 5px;
+      color: black;
+    }
+    .teams, .timeLocation {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;      
+    }
+    .fixture{
+     width: 200px;     
+    }
+     .timeLocation, .teams{     
+      width: 150px;
+     }
+     
+     .homeNormalButton{
+        padding: 12px 24px;
+        border-radius: 25px; 
+        border:none;
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .homeOutlineButton{
+        border:1px rgb(0, 53, 133) solid;
+        padding: 10px 20px;
+        border-radius: 25px;  
+        color: rgb(0, 53, 133);  
+        text-decoration: none;    
+    }
+    .homeOutlineButton:hover{
+        /* border:none; */
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        cursor: pointer;
+    }
+    .homeButtons{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    
+   
+  </style>
+  <body>
+    <div class="mainFixtureContainer">
+      <!-- top part -->
+      <div class="topPart">
+        <div class="topPartTitle">
+          <p>Upcoming Fixtures</p>
+        </div>
+      </div>
+      <!-- bottom part  -->
+      <div class="fixtureContainer">
+        <!-- each fixture div -->
+        <div class="oneFixture">
+          <div class="fixture">
+            <p>Kenya Premier League</p>
+          </div>
+          <div class="timeLocation">
+            <p>15:00 EAT</p>
+            <p>MISC Kasarani</p>
+          </div>
+          <div class="teams">
+            <p>Gor Mahia</p>
+            <p>Tusker</p>
+          </div>
+          <div class="date">
+            <p>12/03/2023</p>
+          </div>
+          <div class="ticket">
+            <div class="outlineTicketButton"><a href="./book">Buy Ticket</a> </div>
+          </div>
+        </div>
+
+        <!-- fixture2 -->
+        <div class="oneFixture">
+          <div>
+            <p class="fixture">Caf Champions League</p>
+          </div>
+          <div class="timeLocation">
+            <p>15:00 EAT</p>
+            <p>Nyayo Stadium</p>
+          </div>
+          <div class="teams">
+            <p>K sharks</p>
+            <p>Afc Leopards</p>
+          </div>
+          <div class="date">
+            <p>12/03/2023</p>
+          </div>
+          <div class="ticket">
+            <div class="outlineTicketButton">Buy Ticket</div>
+          </div>
+        </div>
+        <div class="oneFixture">
+          <div class="fixture">
+            <p>Mozzart Cup</p>
+          </div>
+          <div class="timeLocation">
+            <p>15:00 EAT</p>
+            <p>Nyayo Stadium</p>
+          </div>
+          <div class="teams">
+            <p>K sharks</p>
+            <p>Afc Leopards</p>
+          </div>
+          <div class="date">
+            <p>12/03/2023</p>
+          </div>
+          <div class="homeButtons">
+              <a href="./#" class="homeOutlineButton" >Edit</a>
+              <a href="./#" class="homeNormalButton">Delete</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
