@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+    }
+    .TicketPricingContainer {
+      width: 83%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 600px;
+    }
+    .formTicketContainer {
+     
+    margin: 20px 0px;
+    }
+    .fixtureTitle {
+      font-size: 1.5rem;
+      color: rgb(10, 79, 182);
+      margin: 30px 0px;
+    }
+
+    .normalFormButton {
+      padding: 12px 24px;
+      border-radius: 25px;
+      border: none;
+      background-color: rgb(10, 79, 182);
+      color: white;
+      cursor: pointer;
+    }
+    .formTicketInput {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 15px 0px;
+    }
+    .formTicketInput input {
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid lightgray;
+    }
+    .formTicketInput input:focus {
+      outline: none;
+    }
+    .fixtureStyling {
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid lightgray;
+    }
+    .fixtureStyling:focus {
+      outline: none;
+    }
+    .oneFixture {
+      display: flex;    
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      padding: 18px 0px;
+      color: #272829;
+      border-bottom: 1px solid #7c7c7c;      
+    }
+    .oneFixture:hover {
+      cursor: pointer;
+      background-color: rgb(238, 238, 238);
+      padding: 18px 5px;
+      color: black;
+    }
+    .homeNormalButton{
+        padding: 12px 24px;
+        border-radius: 25px; 
+        border:none;
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .homeOutlineButton{
+        border:1px rgb(0, 53, 133) solid;
+        padding: 10px 20px;
+        border-radius: 25px;  
+        color: rgb(0, 53, 133);  
+        text-decoration: none;    
+    }
+    .homeOutlineButton:hover{
+        /* border:none; */
+        background-color: rgb(10, 79, 182) ;
+        color: white;
+        cursor: pointer;
+    }
+    .homeButtons{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .ticketPriceItems{
+      margin: 40px 0px;
+    }
+    .ticketPriceTitle{
+      font-size: 1.5rem;
+      color: rgb(10, 79, 182);   
+      text-align: center;   
+      margin: 10px 0px;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th {
+        color: rgb(10, 79, 182);
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 12px;
+      }
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      .tablePricing{
+        margin: 20px 0px;
+      }
+  </style>
+  <body>
+    <div class="TicketPricingContainer">
+      <div class="createFixtureContainer">
+        <p class="fixtureTitle">Ticket Pricing</p>
+
+        <form action="./fixtures" method="post">
+          <div class="formTicketContainer">
+            <div class="formTicketInput">
+              <label for="fixtureType">Fixture Type:</label>
+              <select
+                name="fixtureType"
+                id="fixtureType"
+                class="fixtureStyling"
+              >
+                <option value="" selected disabled hidden>
+                  Choose fixture type
+                </option>
+                <option value="Kenya Premier League">
+                  Kenya Premier League
+                </option>
+                <option value="Mozzart Cup">Mozzart Cup</option>
+                <option value="CAF Champions League">
+                  CAF Champions League
+                </option>
+                <option value="CAF confederation">CAF confederation</option>
+              </select>
+            </div>
+            <div class="formTicketInput">
+              <label for="vipTicketPrice">VIP Ticket Price:</label>
+              <input type="number" name="vipTicketPrice" id="vipTicketPrice" />
+            </div>
+            <div class="formTicketInput">
+              <label for="normalTicketPrice">Normal Ticket Price:</label>
+              <input type="number" name="normalTicketPrice" id="normalTicketPrice" />
+            </div>
+          
+          </div>
+          <input class="normalFormButton" type="submit" value="Submit" />
+        </form>
+
+        <!-- Ticket table -->
+       <div class="tablePricing">
+        <div class="ticketPriceTitle">
+          <p>Available Tickets</p>
+        </div>
+        <table>
+          <tr>
+            <th>Ticket Type</th>
+            <th>VIP Amount</th>
+            <th>Normal Amount</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>Mozzart Cup</td>
+            <td>500</td>
+            <td>200</td>
+            <td>
+              <div class="homeButtons">
+                <a href="./#" class="homeOutlineButton" >Edit</a>
+                <a href="./#" class="homeNormalButton">Delete</a>
+          </div>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+  
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </body>
+</html>
